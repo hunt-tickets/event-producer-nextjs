@@ -1,8 +1,13 @@
 import type { Metadata } from "next";
-import { Inter, Playfair_Display } from "next/font/google";
+import { Lato, Playfair_Display } from "next/font/google";
 import "./globals.css";
 
-const inter = Inter({ subsets: ["latin"] });
+const lato = Lato({
+  subsets: ["latin"],
+  weight: ['300', '400', '700'],
+  variable: '--font-lato'
+});
+
 const playfair = Playfair_Display({
   subsets: ["latin"],
   variable: '--font-playfair',
@@ -21,7 +26,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="es">
-      <body className={`${inter.className} ${playfair.variable} antialiased`}>{children}</body>
+      <body className={`${lato.className} ${lato.variable} ${playfair.variable} antialiased`}>{children}</body>
     </html>
   );
 }

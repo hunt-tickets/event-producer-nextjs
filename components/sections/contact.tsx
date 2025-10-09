@@ -26,7 +26,7 @@ export function ContactSection() {
     <section id="contacto" className="py-24 md:py-32 bg-zinc-950">
       <div className="container px-6 md:px-8 max-w-7xl mx-auto">
         <div className="text-center mb-16 md:mb-24">
-          <h2 className="text-4xl md:text-6xl font-extralight tracking-tight text-white uppercase">
+          <h2 className="title-stretched text-4xl md:text-6xl font-light text-white uppercase">
             Contacto
           </h2>
         </div>
@@ -34,10 +34,10 @@ export function ContactSection() {
         <div className="grid gap-12 md:gap-16 lg:grid-cols-2 max-w-5xl mx-auto">
           <div className="space-y-8">
             <div>
-              <h3 className="text-2xl font-light text-white mb-6 uppercase tracking-wide">
+              <h3 className="font-playfair text-2xl font-light text-white mb-6 uppercase tracking-wide">
                 Hablemos
               </h3>
-              <p className="text-gray-400 leading-relaxed mb-8">
+              <p className="font-lato text-gray-400 leading-relaxed mb-8 font-light">
                 Transformemos tu visión en una experiencia inolvidable.
                 Estamos aquí para hacer realidad eventos extraordinarios.
               </p>
@@ -48,7 +48,7 @@ export function ContactSection() {
                 <span className="block w-1 h-1 bg-white rounded-full mt-2 flex-shrink-0" />
                 <div>
                   <p className="text-sm text-gray-500 uppercase tracking-wider mb-1">Email</p>
-                  <p className="text-white">hello@inside.com</p>
+                  <p className="font-lato text-white font-light">hello@inside.com</p>
                 </div>
               </div>
 
@@ -56,7 +56,7 @@ export function ContactSection() {
                 <span className="block w-1 h-1 bg-white rounded-full mt-2 flex-shrink-0" />
                 <div>
                   <p className="text-sm text-gray-500 uppercase tracking-wider mb-1">Teléfono</p>
-                  <p className="text-white">+1 (555) 000-0000</p>
+                  <p className="font-lato text-white font-light">+1 (555) 000-0000</p>
                 </div>
               </div>
 
@@ -64,7 +64,7 @@ export function ContactSection() {
                 <span className="block w-1 h-1 bg-white rounded-full mt-2 flex-shrink-0" />
                 <div>
                   <p className="text-sm text-gray-500 uppercase tracking-wider mb-1">Ubicación</p>
-                  <p className="text-white">Ciudad de México</p>
+                  <p className="font-lato text-white font-light">Ciudad de México</p>
                 </div>
               </div>
             </div>

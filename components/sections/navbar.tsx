@@ -38,7 +38,7 @@ export function Navbar() {
       <div className="container px-4 md:px-6">
         <div className="flex h-14 md:h-16 items-center justify-between">
           <Link href="/" className="flex items-center">
-            <span className="text-white font-bold text-lg md:text-xl">
+            <span className="font-playfair text-white font-light text-lg md:text-xl tracking-wider">
               INSIDE
             </span>
           </Link>
@@ -69,7 +69,7 @@ export function Navbar() {
             </SheetTrigger>
             <SheetContent side="right" className="bg-black border-l border-gray-800">
               <div className="flex flex-col space-y-6 mt-8">
-                <span className="text-white font-bold text-xl mb-4">
+                <span className="font-playfair text-white font-light text-xl mb-4 tracking-wider">
                   INSIDE
                 </span>
                 {menuItems.map((item) => (

@@ -36,7 +36,7 @@ export function ServicesSection() {
     <section id="servicios" className="py-24 md:py-32 bg-zinc-950">
       <div className="container px-6 md:px-8 max-w-7xl mx-auto">
         <div className="text-center mb-16 md:mb-24">
-          <h2 className="text-4xl md:text-6xl font-extralight tracking-tight text-white uppercase">
+          <h2 className="title-stretched text-4xl md:text-6xl font-light text-white uppercase">
             Nuestros Servicios
           </h2>
         </div>
@@ -50,10 +50,10 @@ export function ServicesSection() {
               <div className="absolute inset-0 bg-gradient-to-b from-transparent to-black/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
 
               <div className="relative">
-                <h3 className="text-xl md:text-2xl font-light text-white mb-3 uppercase tracking-wide">
+                <h3 className="font-playfair text-xl md:text-2xl font-light text-white mb-3 uppercase tracking-wide">
                   {service.title}
                 </h3>
-                <p className="text-sm md:text-base text-gray-400 mb-8">
+                <p className="font-lato text-sm md:text-base text-gray-400 mb-8 font-light">
                   {service.description}
                 </p>
 
@@ -61,7 +61,7 @@ export function ServicesSection() {
                   {service.features.map((feature, idx) => (
                     <li key={idx} className="flex items-start">
                       <span className="block w-1 h-1 bg-white rounded-full mt-2 mr-3 flex-shrink-0" />
-                      <span className="text-sm text-gray-300">{feature}</span>
+                      <span className="font-lato text-sm text-gray-300 font-light">{feature}</span>
                     </li>
                   ))}
                 </ul>

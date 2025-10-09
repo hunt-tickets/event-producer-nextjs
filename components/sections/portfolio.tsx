@@ -36,7 +36,7 @@ export function PortfolioSection() {
     <section id="portfolio" className="py-24 md:py-32 bg-black">
       <div className="container px-6 md:px-8 max-w-7xl mx-auto">
         <div className="text-center mb-16 md:mb-24">
-          <h2 className="text-4xl md:text-6xl font-extralight tracking-tight text-white uppercase">
+          <h2 className="title-stretched text-4xl md:text-6xl font-light text-white uppercase">
             Portfolio
           </h2>
         </div>
@@ -54,7 +54,7 @@ export function PortfolioSection() {
                   <p className="text-xs text-gray-400 mb-2 uppercase tracking-wider">
                     {project.category} · {project.year}
                   </p>
-                  <h3 className="text-lg md:text-xl font-light text-white uppercase tracking-wide">
+                  <h3 className="font-playfair text-lg md:text-xl font-light text-white uppercase tracking-wide">
                     {project.title}
                   </h3>
                 </div>

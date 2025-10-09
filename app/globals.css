@@ -11,11 +11,19 @@
     font-family: var(--font-playfair), serif;
   }
 
+  .font-lato {
+    font-family: var(--font-lato), sans-serif;
+  }
+
   .text-stretched {
     letter-spacing: 0.03em;
     transform: scaleY(1.2);
     line-height: 0.95;
     display: inline-block;
+  }
+
+  .title-stretched {
+    @apply font-playfair text-stretched;
   }
 }
 
