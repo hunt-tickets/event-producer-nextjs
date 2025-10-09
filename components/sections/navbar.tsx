@@ -13,6 +13,16 @@ import {
 
 export function Navbar() {
   const [isOpen, setIsOpen] = React.useState(false)
+  const [hasScrolled, setHasScrolled] = React.useState(false)
+
+  React.useEffect(() => {
+    const handleScroll = () => {
+      setHasScrolled(window.scrollY > 10)
+    }
+
+    window.addEventListener("scroll", handleScroll)
+    return () => window.removeEventListener("scroll", handleScroll)
+  }, [])
 
   const menuItems = [
     { href: "#inicio", label: "Inicio" },
@@ -23,7 +33,9 @@ export function Navbar() {
   ]
 
   return (
-    <nav className="sticky top-0 z-50 w-full border-b border-gray-800 bg-black/95 backdrop-blur">
+    <nav className={`fixed top-0 z-50 w-full transition-all duration-300 ${
+      hasScrolled ? "bg-black/80 backdrop-blur-md" : "bg-transparent"
+    }`}>
       <div className="container px-4 md:px-6">
         <div className="flex h-14 md:h-16 items-center justify-between">
           <Link href="/" className="flex items-center">
@@ -43,7 +55,7 @@ export function Navbar() {
               <Link
                 key={item.href}
                 href={item.href}
-                className="text-sm font-medium text-gray-300 hover:text-white transition-colors"
+                className="text-sm font-medium text-white/90 hover:text-white transition-colors"
               >
                 {item.label}
               </Link>
@@ -56,8 +68,8 @@ export function Navbar() {
           {/* Mobile Navigation */}
           <Sheet open={isOpen} onOpenChange={setIsOpen}>
             <SheetTrigger asChild className="md:hidden">
-              <Button variant="outline" size="icon" className="border-gray-700 bg-black">
-                <Menu className="h-5 w-5 text-white" />
+              <Button variant="ghost" size="icon" className="text-white hover:bg-white/10">
+                <Menu className="h-5 w-5" />
                 <span className="sr-only">Toggle menu</span>
               </Button>
             </SheetTrigger>
