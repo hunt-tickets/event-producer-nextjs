@@ -3,19 +3,12 @@ import { Button } from "@/components/ui/button"
 export function HeroSection() {
   return (
     <section id="inicio" className="relative min-h-screen flex items-center justify-center text-white overflow-hidden">
-      {/* Video de fondo sin overlay */}
-      <video
-        autoPlay
-        loop
-        muted
-        playsInline
+      {/* GIF de fondo */}
+      <img
+        src="https://62qhyx3jmc.ufs.sh/f/kS1daVeAXiztV28keXmYNLfTBPpFXiyVa5tkUHW1b8M9w3DK"
+        alt="Background"
         className="absolute inset-0 w-full h-full object-cover"
-      >
-        <source
-          src="https://62qhyx3jmc.ufs.sh/f/kS1daVeAXiztPplsPYKvlFRrAEOCxqoU4Dnp1VuhSYgZy3it"
-          type="video/mp4"
-        />
-      </video>
+      />
 
       {/* Contenido simplificado: solo título y botones */}
       <div className="container relative z-10 text-center px-4 md:px-6">
