@@ -2,7 +2,7 @@ import { Navbar } from "@/components/sections/navbar"
 import { HeroSection } from "@/components/sections/hero"
 import { TextMarquee } from "@/components/sections/text-marquee"
 import { AboutSection } from "@/components/sections/about"
-import { ServicesSection } from "@/components/sections/services"
+import { ServicesNewSection } from "@/components/sections/services-new"
 import { LogoCarousel } from "@/components/sections/logo-carousel"
 import { PortfolioSection } from "@/components/sections/portfolio"
 import { ContactSection } from "@/components/sections/contact"
@@ -16,7 +16,7 @@ export default function Home() {
         <HeroSection />
         <TextMarquee />
         <AboutSection />
-        <ServicesSection />
+        <ServicesNewSection />
         <LogoCarousel />
         <PortfolioSection />
         <ContactSection />
