@@ -35,25 +35,25 @@ export function PortfolioSection() {
   ]
 
   return (
-    <section id="portfolio" className="py-20">
-      <div className="container">
-        <div className="text-center mb-12">
-          <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
+    <section id="portfolio" className="py-16 md:py-20 bg-black">
+      <div className="container px-4 md:px-6">
+        <div className="text-center mb-8 md:mb-12">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight text-white">
             PORTFOLIO
           </h2>
-          <p className="mx-auto max-w-[700px] text-gray-600 md:text-lg mt-4">
+          <p className="mx-auto max-w-[280px] sm:max-w-[500px] md:max-w-[700px] text-gray-400 text-sm sm:text-base md:text-lg mt-3 md:mt-4">
             Algunos de nuestros eventos más destacados
           </p>
         </div>
 
-        <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+        <div className="grid gap-4 md:gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {projects.map((project, index) => (
-            <Card key={index} className="overflow-hidden hover:shadow-lg transition-shadow">
-              <div className="h-48 bg-gradient-to-br from-gray-900 to-gray-700" />
-              <CardContent className="p-6">
+            <Card key={index} className="overflow-hidden bg-zinc-900 border-gray-800 hover:border-gray-600 transition-all duration-300">
+              <div className="h-32 sm:h-40 md:h-48 bg-gradient-to-br from-zinc-800 to-zinc-700" />
+              <CardContent className="p-4 md:p-6">
                 <div className="space-y-2">
-                  <h3 className="font-bold text-lg">{project.title}</h3>
-                  <div className="flex justify-between text-sm text-gray-600">
+                  <h3 className="font-bold text-base md:text-lg text-white">{project.title}</h3>
+                  <div className="flex justify-between text-xs md:text-sm text-gray-400">
                     <span>{project.category}</span>
                     <span>{project.attendees} asistentes</span>
                   </div>
