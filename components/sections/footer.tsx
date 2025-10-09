@@ -1,20 +1,27 @@
 export function Footer() {
   return (
-    <footer className="border-t border-gray-800 bg-zinc-900">
-      <div className="container px-4 md:px-6 py-6 md:py-8">
-        <div className="flex flex-col sm:flex-row justify-between items-center gap-3 md:gap-4">
-          <div className="text-center sm:text-left">
-            <h3 className="text-white font-bold text-lg md:text-xl mb-2">
-              INSIDE
+    <footer className="border-t border-gray-900 bg-black">
+      <div className="container px-6 md:px-8 py-12 md:py-16 max-w-7xl mx-auto">
+        <div className="flex flex-col md:flex-row justify-between items-center gap-6">
+          <div className="text-center md:text-left">
+            <h3 className="text-white font-extralight text-2xl md:text-3xl tracking-wider uppercase">
+              Inside
             </h3>
-            <p className="text-xs md:text-sm text-gray-400">
-              Excelencia en producción de eventos desde 2008
+          </div>
+
+          <div className="text-center">
+            <p className="text-xs text-gray-600 uppercase tracking-widest">
+              © {new Date().getFullYear()} Inside Creative Entertainment
             </p>
           </div>
-          <div className="text-center sm:text-right">
-            <p className="text-xs md:text-sm text-gray-400">
-              © {new Date().getFullYear()} Inside Creative Entertainment. Todos los derechos reservados.
-            </p>
+
+          <div className="flex gap-6">
+            <a href="#" className="text-gray-500 hover:text-white transition-colors text-sm uppercase tracking-wider">
+              Instagram
+            </a>
+            <a href="#" className="text-gray-500 hover:text-white transition-colors text-sm uppercase tracking-wider">
+              LinkedIn
+            </a>
           </div>
         </div>
       </div>

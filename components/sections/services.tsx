@@ -1,72 +1,72 @@
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
-import { CheckCircle } from "lucide-react"
-
 export function ServicesSection() {
   const services = [
     {
-      title: "EVENTOS CORPORATIVOS",
-      description: "Conferencias, lanzamientos y convenciones de alto nivel",
+      title: "Eventos Corporativos",
+      description: "Conferencias y convenciones de alto impacto",
       features: [
-        "Planificación estratégica",
-        "Gestión integral del evento",
-        "Producción audiovisual",
-        "Catering premium"
+        "Planificación estratégica integral",
+        "Producción audiovisual premium",
+        "Gestión logística completa",
+        "Experiencias inmersivas"
       ]
     },
     {
-      title: "EVENTOS SOCIALES",
-      description: "Bodas y celebraciones exclusivas con estilo único",
+      title: "Eventos Sociales",
+      description: "Celebraciones exclusivas con estilo único",
       features: [
-        "Diseño personalizado",
-        "Coordinación completa",
-        "Decoración exclusiva",
+        "Diseño conceptual personalizado",
+        "Coordinación de proveedores",
+        "Ambientación y decoración",
         "Entretenimiento de élite"
       ]
     },
     {
-      title: "EVENTOS VIRTUALES",
-      description: "Experiencias digitales innovadoras y engagement online",
+      title: "Producciones Digitales",
+      description: "Experiencias virtuales e híbridas innovadoras",
       features: [
-        "Streaming profesional",
+        "Streaming profesional 4K",
         "Plataformas interactivas",
-        "Producción remota",
-        "Análisis de métricas"
+        "Realidad aumentada",
+        "Análisis de engagement"
       ]
     }
   ]
 
   return (
-    <section id="servicios" className="py-16 md:py-20 bg-zinc-900">
-      <div className="container px-4 md:px-6">
-        <div className="text-center mb-8 md:mb-12">
-          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight text-white">
-            NUESTROS SERVICIOS
+    <section id="servicios" className="py-24 md:py-32 bg-zinc-950">
+      <div className="container px-6 md:px-8 max-w-7xl mx-auto">
+        <div className="text-center mb-16 md:mb-24">
+          <h2 className="text-4xl md:text-6xl font-extralight tracking-tight text-white uppercase">
+            Nuestros Servicios
           </h2>
-          <p className="mx-auto max-w-[280px] sm:max-w-[500px] md:max-w-[700px] text-gray-400 text-sm sm:text-base md:text-lg mt-3 md:mt-4">
-            Soluciones integrales para cada tipo de evento
-          </p>
         </div>
 
-        <div className="grid gap-4 md:gap-6 lg:grid-cols-3">
+        <div className="grid gap-8 md:gap-12 lg:grid-cols-3">
           {services.map((service, index) => (
-            <Card key={index} className="bg-black border-gray-800 hover:border-gray-600 transition-all duration-300 hover:shadow-xl">
-              <CardHeader className="pb-4">
-                <CardTitle className="text-lg md:text-xl text-white">{service.title}</CardTitle>
-                <CardDescription className="text-sm md:text-base text-gray-400">
+            <div
+              key={index}
+              className="group relative bg-black/50 backdrop-blur-sm border border-gray-800 p-8 md:p-10 hover:border-gray-600 transition-all duration-500"
+            >
+              <div className="absolute inset-0 bg-gradient-to-b from-transparent to-black/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+
+              <div className="relative">
+                <h3 className="text-xl md:text-2xl font-light text-white mb-3 uppercase tracking-wide">
+                  {service.title}
+                </h3>
+                <p className="text-sm md:text-base text-gray-400 mb-8">
                   {service.description}
-                </CardDescription>
-              </CardHeader>
-              <CardContent>
-                <ul className="space-y-3">
+                </p>
+
+                <ul className="space-y-4">
                   {service.features.map((feature, idx) => (
-                    <li key={idx} className="flex items-start space-x-2">
-                      <CheckCircle className="h-4 w-4 md:h-5 md:w-5 mt-0.5 flex-shrink-0 text-white" />
-                      <span className="text-xs md:text-sm text-gray-300">{feature}</span>
+                    <li key={idx} className="flex items-start">
+                      <span className="block w-1 h-1 bg-white rounded-full mt-2 mr-3 flex-shrink-0" />
+                      <span className="text-sm text-gray-300">{feature}</span>
                     </li>
                   ))}
                 </ul>
-              </CardContent>
-            </Card>
+              </div>
+            </div>
           ))}
         </div>
       </div>
