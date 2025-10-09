@@ -19,8 +19,8 @@ export function HeroSection() {
 
       {/* Contenido simplificado: solo título y botones */}
       <div className="container relative z-10 text-center px-4 md:px-6">
-        <h1 className="text-4xl font-bold tracking-tight sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl mb-8 md:mb-12">
-          PRODUCCIÓN DE EVENTOS
+        <h1 className="text-4xl font-bold tracking-tight sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl mb-8 md:mb-12 uppercase">
+          Inside Creative Entertainment
         </h1>
 
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
