@@ -23,17 +23,16 @@ export function HeroSection() {
           Inside Creative Entertainment
         </h1>
 
-        <div className="flex flex-col sm:flex-row gap-4 justify-center">
+        <div className="flex flex-row gap-4 justify-center">
           <Button
             size="lg"
-            className="bg-white text-black hover:bg-gray-200 px-8 py-6 text-base md:text-lg"
+            className="bg-white/10 backdrop-blur-md text-white border border-white/20 hover:bg-white/20 px-8 py-6 text-base md:text-lg transition-all"
           >
             Ver Portfolio
           </Button>
           <Button
             size="lg"
-            variant="outline"
-            className="border-2 border-white text-white bg-transparent hover:bg-white hover:text-black px-8 py-6 text-base md:text-lg"
+            className="bg-white/10 backdrop-blur-md text-white border border-white/20 hover:bg-white/20 px-8 py-6 text-base md:text-lg transition-all"
           >
             Contactar
           </Button>
