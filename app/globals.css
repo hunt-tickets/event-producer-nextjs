@@ -6,6 +6,17 @@
   .text-balance {
     text-wrap: balance;
   }
+
+  .font-playfair {
+    font-family: var(--font-playfair), serif;
+  }
+
+  .text-stretched {
+    letter-spacing: 0.03em;
+    transform: scaleY(1.2);
+    line-height: 0.95;
+    display: inline-block;
+  }
 }
 
 @layer base {
