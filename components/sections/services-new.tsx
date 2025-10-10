@@ -1,11 +1,9 @@
 import {
   Mic,
-  Users,
   Monitor,
   Sparkles,
   Camera,
   Music,
-  Laptop,
   Globe
 } from "lucide-react"
 
