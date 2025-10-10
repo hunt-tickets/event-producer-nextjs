@@ -1,6 +1,5 @@
 import { Navbar } from "@/components/sections/navbar"
 import { HeroSection } from "@/components/sections/hero"
-import { TextMarquee } from "@/components/sections/text-marquee"
 import { AboutSection } from "@/components/sections/about"
 import { ServicesNewSection } from "@/components/sections/services-new"
 import { LogoCarousel } from "@/components/sections/logo-carousel"
@@ -14,7 +13,6 @@ export default function Home() {
       <Navbar />
       <main>
         <HeroSection />
-        <TextMarquee />
         <AboutSection />
         <ServicesNewSection />
         <LogoCarousel />
