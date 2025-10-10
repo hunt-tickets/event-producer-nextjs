@@ -3,11 +3,19 @@ import { Button } from "@/components/ui/button"
 export function HeroSection() {
   return (
     <section id="inicio" className="relative min-h-screen flex items-center justify-center text-white overflow-hidden">
+      {/* Placeholder image while GIF loads */}
+      <div
+        className="absolute inset-0 w-full h-full bg-cover bg-center"
+        style={{
+          backgroundImage: `url('https://62qhyx3jmc.ufs.sh/f/kS1daVeAXiztFeJXOCJyVytp659EWMcsUOn27FikCvXqLzZJ')`
+        }}
+      />
       {/* GIF de fondo */}
       <img
         src="https://62qhyx3jmc.ufs.sh/f/kS1daVeAXiztV28keXmYNLfTBPpFXiyVa5tkUHW1b8M9w3DK"
         alt="Background"
         className="absolute inset-0 w-full h-full object-cover"
+        loading="eager"
       />
 
       {/* Contenido simplificado: solo título y botones */}
