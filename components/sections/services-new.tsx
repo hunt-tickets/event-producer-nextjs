@@ -49,7 +49,7 @@ export function ServicesNewSection() {
           <h2 className="title-stretched text-4xl md:text-6xl font-light text-white uppercase mb-4">
             Servicios
           </h2>
-          <p className="font-lato text-gray-500 text-sm md:text-base uppercase tracking-widest">
+          <p className="font-poppins text-gray-500 text-sm md:text-base uppercase tracking-widest">
             Todo lo que necesitas • Un solo lugar
           </p>
         </div>
@@ -67,14 +67,14 @@ export function ServicesNewSection() {
                   {service.icon}
                 </div>
 
-                <h3 className="font-playfair text-lg md:text-xl text-white font-light uppercase tracking-wide">
+                <h3 className="font-bebas text-lg md:text-xl text-white font-light uppercase tracking-wide">
                   {service.title}
                 </h3>
 
                 {/* Quick list - visible on hover on desktop, always visible on mobile */}
                 <div className="space-y-1 md:opacity-0 md:group-hover:opacity-100 transition-opacity duration-300">
                   {service.items.map((item, idx) => (
-                    <p key={idx} className="font-lato text-xs text-gray-500">
+                    <p key={idx} className="font-poppins text-xs text-gray-500">
                       {item}
                     </p>
                   ))}
@@ -89,10 +89,10 @@ export function ServicesNewSection() {
 
         {/* CTA */}
         <div className="text-center mt-12 md:mt-16">
-          <p className="font-lato text-gray-400 mb-6">
+          <p className="font-poppins text-gray-400 mb-6">
             ¿Listo para crear algo extraordinario?
           </p>
-          <button className="px-8 py-3 bg-white text-black font-lato text-sm uppercase tracking-wider hover:bg-gray-100 transition-colors">
+          <button className="px-8 py-3 bg-white text-black font-poppins text-sm uppercase tracking-wider hover:bg-gray-100 transition-colors">
             Cotiza tu evento
           </button>
         </div>

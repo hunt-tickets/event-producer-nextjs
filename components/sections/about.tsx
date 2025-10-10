@@ -16,7 +16,7 @@ export function AboutSection() {
         </div>
 
         <div className="max-w-4xl mx-auto text-center mb-20 md:mb-28">
-          <p className="font-lato text-lg md:text-xl text-gray-300 leading-relaxed font-light">
+          <p className="font-poppins text-lg md:text-xl text-gray-300 leading-relaxed font-light">
             Más de una década transformando ideas en experiencias memorables.
             Nuestra pasión por la excelencia nos ha llevado a establecer nuevos
             estándares en la industria del entretenimiento y eventos corporativos.
@@ -26,7 +26,7 @@ export function AboutSection() {
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-12">
           {stats.map((stat, index) => (
             <div key={index} className="text-center group">
-              <div className="font-playfair text-5xl md:text-7xl font-light text-white mb-2 transition-all duration-300 group-hover:scale-110">
+              <div className="font-bebas text-5xl md:text-7xl font-light text-white mb-2 transition-all duration-300 group-hover:scale-110">
                 {stat.number}
               </div>
               <div className="text-xs md:text-sm text-gray-500 uppercase tracking-widest">

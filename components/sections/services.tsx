@@ -50,10 +50,10 @@ export function ServicesSection() {
               <div className="absolute inset-0 bg-gradient-to-b from-transparent to-black/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
 
               <div className="relative">
-                <h3 className="font-playfair text-xl md:text-2xl font-light text-white mb-3 uppercase tracking-wide">
+                <h3 className="font-bebas text-xl md:text-2xl font-light text-white mb-3 uppercase tracking-wide">
                   {service.title}
                 </h3>
-                <p className="font-lato text-sm md:text-base text-gray-400 mb-8 font-light">
+                <p className="font-poppins text-sm md:text-base text-gray-400 mb-8 font-light">
                   {service.description}
                 </p>
 
@@ -61,7 +61,7 @@ export function ServicesSection() {
                   {service.features.map((feature, idx) => (
                     <li key={idx} className="flex items-start">
                       <span className="block w-1 h-1 bg-white rounded-full mt-2 mr-3 flex-shrink-0" />
-                      <span className="font-lato text-sm text-gray-300 font-light">{feature}</span>
+                      <span className="font-poppins text-sm text-gray-300 font-light">{feature}</span>
                     </li>
                   ))}
                 </ul>

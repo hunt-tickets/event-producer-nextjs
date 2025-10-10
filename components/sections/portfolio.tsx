@@ -54,7 +54,7 @@ export function PortfolioSection() {
                   <p className="text-xs text-gray-400 mb-2 uppercase tracking-wider">
                     {project.category} · {project.year}
                   </p>
-                  <h3 className="font-playfair text-lg md:text-xl font-light text-white uppercase tracking-wide">
+                  <h3 className="font-bebas text-lg md:text-xl font-light text-white uppercase tracking-wide">
                     {project.title}
                   </h3>
                 </div>

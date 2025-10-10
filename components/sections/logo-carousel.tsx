@@ -29,7 +29,7 @@ export function LogoCarousel() {
                 key={`first-${logo.id}`}
                 className="flex-shrink-0 w-32 h-32 md:w-40 md:h-40 bg-zinc-800/50 rounded-none flex items-center justify-center"
               >
-                <span className="font-lato text-white/30 text-sm uppercase tracking-wider">
+                <span className="font-poppins text-white/30 text-sm uppercase tracking-wider">
                   {logo.name}
                 </span>
               </div>
@@ -42,7 +42,7 @@ export function LogoCarousel() {
                 key={`second-${logo.id}`}
                 className="flex-shrink-0 w-32 h-32 md:w-40 md:h-40 bg-zinc-800/50 rounded-none flex items-center justify-center"
               >
-                <span className="font-lato text-white/30 text-sm uppercase tracking-wider">
+                <span className="font-poppins text-white/30 text-sm uppercase tracking-wider">
                   {logo.name}
                 </span>
               </div>

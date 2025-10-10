@@ -12,7 +12,7 @@ export function HeroSection() {
 
       {/* Contenido simplificado: solo título y botones */}
       <div className="container relative z-10 text-center px-4 md:px-6">
-        <h1 className="font-playfair text-stretched text-5xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl mb-8 md:mb-12 uppercase font-light">
+        <h1 className="font-bebas text-stretched text-5xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl mb-8 md:mb-12 uppercase font-light">
           Inside Entertainment
         </h1>
 

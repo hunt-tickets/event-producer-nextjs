@@ -34,10 +34,10 @@ export function ContactSection() {
         <div className="grid gap-12 md:gap-16 lg:grid-cols-2 max-w-5xl mx-auto">
           <div className="space-y-8">
             <div>
-              <h3 className="font-playfair text-2xl font-light text-white mb-6 uppercase tracking-wide">
+              <h3 className="font-bebas text-2xl font-light text-white mb-6 uppercase tracking-wide">
                 Hablemos
               </h3>
-              <p className="font-lato text-gray-400 leading-relaxed mb-8 font-light">
+              <p className="font-poppins text-gray-400 leading-relaxed mb-8 font-light">
                 Transformemos tu visión en una experiencia inolvidable.
                 Estamos aquí para hacer realidad eventos extraordinarios.
               </p>
@@ -48,7 +48,7 @@ export function ContactSection() {
                 <span className="block w-1 h-1 bg-white rounded-full mt-2 flex-shrink-0" />
                 <div>
                   <p className="text-sm text-gray-500 uppercase tracking-wider mb-1">Email</p>
-                  <p className="font-lato text-white font-light">hello@inside.com</p>
+                  <p className="font-poppins text-white font-light">hello@inside.com</p>
                 </div>
               </div>
 
@@ -56,7 +56,7 @@ export function ContactSection() {
                 <span className="block w-1 h-1 bg-white rounded-full mt-2 flex-shrink-0" />
                 <div>
                   <p className="text-sm text-gray-500 uppercase tracking-wider mb-1">Teléfono</p>
-                  <p className="font-lato text-white font-light">+1 (555) 000-0000</p>
+                  <p className="font-poppins text-white font-light">+1 (555) 000-0000</p>
                 </div>
               </div>
 
@@ -64,7 +64,7 @@ export function ContactSection() {
                 <span className="block w-1 h-1 bg-white rounded-full mt-2 flex-shrink-0" />
                 <div>
                   <p className="text-sm text-gray-500 uppercase tracking-wider mb-1">Ubicación</p>
-                  <p className="font-lato text-white font-light">Ciudad de México</p>
+                  <p className="font-poppins text-white font-light">Ciudad de México</p>
                 </div>
               </div>
             </div>
