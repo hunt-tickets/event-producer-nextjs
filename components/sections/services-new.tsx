@@ -42,8 +42,16 @@ export function ServicesNewSection() {
   ]
 
   return (
-    <section id="servicios" className="py-20 md:py-28 bg-black">
-      <div className="container px-6 md:px-8 max-w-7xl mx-auto">
+    <section id="servicios" className="py-20 md:py-28 bg-black relative">
+      {/* Dot pattern background */}
+      <div
+        className="absolute inset-0 opacity-10"
+        style={{
+          backgroundImage: `radial-gradient(circle, rgba(255,255,255,0.5) 1px, transparent 1px)`,
+          backgroundSize: '30px 30px'
+        }}
+      />
+      <div className="container px-6 md:px-8 max-w-7xl mx-auto relative z-10">
         {/* Compact header */}
         <div className="text-center mb-12 md:mb-16">
           <h2 className="title-stretched text-4xl md:text-6xl font-light text-white uppercase mb-4">
