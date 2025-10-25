@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState, useEffect, ReactNode, FC } from "react";
+import React, { useState, FC } from "react";
 
 interface FolderProps {
   color?: string;

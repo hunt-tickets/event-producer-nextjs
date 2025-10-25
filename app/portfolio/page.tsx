@@ -6,7 +6,7 @@ import { ArrowLeft } from "lucide-react"
 import { Folder } from "@/components/ui/folder"
 import ImageModal from "@/components/portfolio/image-modal"
 import FolderVideo from "@/components/portfolio/folder-video"
-import { GlassEffect, GlassFilter } from "@/components/ui/liquid-glass"
+import { GlassFilter } from "@/components/ui/liquid-glass"
 
 export default function PortfolioPage() {
   const [isFolderOpenParadisio, setIsFolderOpenParadisio] = useState(false)
@@ -29,11 +29,11 @@ export default function PortfolioPage() {
   ]
 
   // Define gallery items for Producción (empty for now, you can add items later)
-  const galleryItemsProduccion: any[] = []
+  const galleryItemsProduccion: Array<{ type: 'image' | 'video', src: string, alt?: string }> = []
 
   // Maria Helena Amador gallery items
-  const mariaGalleryItemsCreativa: any[] = []
-  const mariaGalleryItemsProduccion: any[] = []
+  const mariaGalleryItemsCreativa: Array<{ type: 'image' | 'video', src: string, alt?: string }> = []
+  const mariaGalleryItemsProduccion: Array<{ type: 'image' | 'video', src: string, alt?: string }> = []
 
   return (
     <div className="relative w-full h-screen bg-black overflow-y-scroll snap-y snap-mandatory">
