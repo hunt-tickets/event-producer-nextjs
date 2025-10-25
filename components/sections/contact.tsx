@@ -26,7 +26,7 @@ export function ContactSection() {
     <section id="contacto" className="py-24 md:py-32 bg-zinc-950">
       <div className="container px-6 md:px-8 max-w-7xl mx-auto">
         <div className="text-center mb-16 md:mb-24">
-          <h2 className="title-stretched text-4xl md:text-6xl font-light text-white uppercase">
+          <h2 className="font-poppins text-3xl md:text-5xl font-light text-white uppercase tracking-wide">
             Contacto
           </h2>
         </div>
@@ -34,7 +34,7 @@ export function ContactSection() {
         <div className="grid gap-12 md:gap-16 lg:grid-cols-2 max-w-5xl mx-auto">
           <div className="space-y-8">
             <div>
-              <h3 className="font-bebas text-2xl font-light text-white mb-6 uppercase tracking-wide">
+              <h3 className="font-poppins text-2xl font-light text-white mb-6 uppercase tracking-wide">
                 Hablemos
               </h3>
               <p className="font-poppins text-gray-400 leading-relaxed mb-8 font-light">
@@ -47,7 +47,7 @@ export function ContactSection() {
               <div className="flex items-start space-x-4">
                 <span className="block w-1 h-1 bg-white rounded-full mt-2 flex-shrink-0" />
                 <div>
-                  <p className="text-sm text-gray-500 uppercase tracking-wider mb-1">Email</p>
+                  <p className="font-poppins text-sm text-gray-500 uppercase tracking-wider mb-1">Email</p>
                   <p className="font-poppins text-white font-light">hello@inside.com</p>
                 </div>
               </div>
@@ -55,7 +55,7 @@ export function ContactSection() {
               <div className="flex items-start space-x-4">
                 <span className="block w-1 h-1 bg-white rounded-full mt-2 flex-shrink-0" />
                 <div>
-                  <p className="text-sm text-gray-500 uppercase tracking-wider mb-1">Teléfono</p>
+                  <p className="font-poppins text-sm text-gray-500 uppercase tracking-wider mb-1">Teléfono</p>
                   <p className="font-poppins text-white font-light">+1 (555) 000-0000</p>
                 </div>
               </div>
@@ -63,7 +63,7 @@ export function ContactSection() {
               <div className="flex items-start space-x-4">
                 <span className="block w-1 h-1 bg-white rounded-full mt-2 flex-shrink-0" />
                 <div>
-                  <p className="text-sm text-gray-500 uppercase tracking-wider mb-1">Ubicación</p>
+                  <p className="font-poppins text-sm text-gray-500 uppercase tracking-wider mb-1">Ubicación</p>
                   <p className="font-poppins text-white font-light">Ciudad de México</p>
                 </div>
               </div>

@@ -36,7 +36,7 @@ export function PortfolioSection() {
     <section id="portfolio" className="py-24 md:py-32 bg-black">
       <div className="container px-6 md:px-8 max-w-7xl mx-auto">
         <div className="text-center mb-16 md:mb-24">
-          <h2 className="title-stretched text-4xl md:text-6xl font-light text-white uppercase">
+          <h2 className="font-poppins text-3xl md:text-5xl font-light text-white uppercase tracking-wide">
             Portfolio
           </h2>
         </div>
@@ -51,10 +51,10 @@ export function PortfolioSection() {
 
               <div className="absolute inset-0 flex flex-col justify-end p-6 md:p-8 transform transition-transform duration-500 group-hover:scale-105">
                 <div className="transform translate-y-2 transition-transform duration-300 group-hover:translate-y-0">
-                  <p className="text-xs text-gray-400 mb-2 uppercase tracking-wider">
+                  <p className="font-poppins text-xs text-gray-400 mb-2 uppercase tracking-wider">
                     {project.category} · {project.year}
                   </p>
-                  <h3 className="font-bebas text-lg md:text-xl font-light text-white uppercase tracking-wide">
+                  <h3 className="font-poppins text-lg md:text-xl font-light text-white uppercase tracking-wide">
                     {project.title}
                   </h3>
                 </div>

@@ -8,6 +8,7 @@ interface FolderProps {
   items?: React.ReactNode[];
   className?: string;
   onOpenChange?: (open: boolean) => void;
+  label?: string;
 }
 
 const darkenColor = (hex: string, percent: number): string => {
@@ -39,6 +40,7 @@ export const Folder: FC<FolderProps> = ({
   items = [],
   className = "",
   onOpenChange,
+  label = "Folder",
 }) => {
   const maxItems = 12;
   const papers = Array(maxItems).fill(null).map((_, i) => items[i] || null);
@@ -116,18 +118,18 @@ export const Folder: FC<FolderProps> = ({
   const getOpenTransform = (index: number) => {
     // Dispersos con buen espaciado entre cada uno
     const baseTransforms = [
-        "translate(-200%, -200%) rotate(-18deg)",
-        "translate(-350%, -180%) rotate(12deg)",
-        "translate(-500%, -160%) rotate(-8deg)",
+        "translate(-200%, -160%) rotate(-18deg)",
+        "translate(-350%, -140%) rotate(12deg)",
+        "translate(-500%, -120%) rotate(-8deg)",
         "translate(-200%, -40%) rotate(22deg)",
         "translate(-350%, -20%) rotate(-14deg)",
         "translate(-500%, 0%) rotate(16deg)",
-        "translate(-200%, 120%) rotate(-24deg)",
-        "translate(-350%, 140%) rotate(10deg)",
-        "translate(-500%, 160%) rotate(-12deg)",
-        "translate(-650%, -180%) rotate(20deg)",
+        "translate(-200%, 80%) rotate(-24deg)",
+        "translate(-350%, 100%) rotate(10deg)",
+        "translate(-500%, 120%) rotate(-12deg)",
+        "translate(-650%, -140%) rotate(20deg)",
         "translate(-650%, -20%) rotate(-16deg)",
-        "translate(-650%, 140%) rotate(14deg)"
+        "translate(-650%, 100%) rotate(14deg)"
     ];
     const mouseTransform = `translate(${paperOffsets[index].x}px, ${paperOffsets[index].y}px)`;
     return `${baseTransforms[index] || ""} ${mouseTransform}`;
@@ -135,7 +137,7 @@ export const Folder: FC<FolderProps> = ({
 
   return (
     <div style={folderBaseStyle} className={className}>
-      <div className="flex flex-col items-center gap-3">
+      <div className="flex flex-col items-center gap-1">
         <div
           className={`group relative transition-all duration-300 ease-in-out cursor-pointer
                       ${!open ? "hover:-translate-y-1" : ""}`}
@@ -247,7 +249,7 @@ export const Folder: FC<FolderProps> = ({
 
         {/* Label */}
         <span className="font-poppins text-white font-extralight text-xs tracking-[0.15em] uppercase">
-          Dirección Creativa
+          {label}
         </span>
       </div>
     </div>

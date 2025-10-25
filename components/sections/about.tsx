@@ -10,7 +10,7 @@ export function AboutSection() {
     <section id="nosotros" className="py-24 md:py-32 bg-black">
       <div className="container px-6 md:px-8 max-w-7xl mx-auto">
         <div className="text-center mb-16 md:mb-24">
-          <h2 className="title-stretched text-4xl md:text-6xl font-light text-white uppercase">
+          <h2 className="font-poppins text-3xl md:text-5xl font-light text-white uppercase tracking-wide">
             Nuestra Trayectoria
           </h2>
         </div>
@@ -26,10 +26,10 @@ export function AboutSection() {
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-12">
           {stats.map((stat, index) => (
             <div key={index} className="text-center group">
-              <div className="font-bebas text-5xl md:text-7xl font-light text-white mb-2 transition-all duration-300 group-hover:scale-110">
+              <div className="font-poppins text-5xl md:text-7xl font-light text-white mb-2 transition-all duration-300 group-hover:scale-110">
                 {stat.number}
               </div>
-              <div className="text-xs md:text-sm text-gray-500 uppercase tracking-widest">
+              <div className="font-poppins text-xs md:text-sm text-gray-500 uppercase tracking-widest">
                 {stat.label}
               </div>
             </div>
