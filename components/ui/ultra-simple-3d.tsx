@@ -1,10 +1,15 @@
 "use client"
 
 import React from "react"
+import dynamic from "next/dynamic"
+
+const Canvas = dynamic(
+  () => import("@react-three/fiber").then((mod) => mod.Canvas),
+  { ssr: false }
+)
 
 export default function UltraSimple3D() {
   const [mounted, setMounted] = React.useState(false)
-  const [error, setError] = React.useState<string | null>(null)
 
   React.useEffect(() => {
     setMounted(true)
@@ -19,8 +24,6 @@ export default function UltraSimple3D() {
   }
 
   try {
-    const { Canvas } = require("@react-three/fiber")
-
     return (
       <div className="w-full h-screen bg-black">
         <Canvas>
@@ -33,14 +36,15 @@ export default function UltraSimple3D() {
         </Canvas>
       </div>
     )
-  } catch (err: any) {
+  } catch (err) {
+    const error = err as Error
     return (
       <div className="w-full h-screen bg-black flex items-center justify-center">
         <div className="text-white text-center p-8">
           <h2 className="text-2xl mb-4">Error cargando 3D</h2>
-          <p className="text-sm">{err?.message || "Error desconocido"}</p>
+          <p className="text-sm">{error?.message || "Error desconocido"}</p>
           <pre className="mt-4 text-xs text-left overflow-auto max-w-2xl">
-            {err?.stack}
+            {error?.stack}
           </pre>
         </div>
       </div>

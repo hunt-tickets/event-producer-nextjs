@@ -1,6 +1,17 @@
 "use client"
 
 import React from "react"
+import dynamic from "next/dynamic"
+
+const Canvas = dynamic(
+  () => import("@react-three/fiber").then((mod) => mod.Canvas),
+  { ssr: false }
+)
+
+const OrbitControls = dynamic(
+  () => import("@react-three/drei").then((mod) => mod.OrbitControls),
+  { ssr: false }
+)
 
 // Versión ultra básica para probar
 export function Test3DBasic() {
@@ -17,10 +28,6 @@ export function Test3DBasic() {
       </div>
     )
   }
-
-  // Solo después de montar, intentamos cargar React Three Fiber
-  const { Canvas } = require("@react-three/fiber")
-  const { OrbitControls } = require("@react-three/drei")
 
   return (
     <div className="w-full h-screen bg-black">
