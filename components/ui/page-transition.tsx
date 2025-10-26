@@ -43,12 +43,25 @@ export function PageTransition({ children }: { children: ReactNode }) {
                 animate={{ scale: 1, opacity: 1 }}
                 exit={{ scale: 0.8, opacity: 0 }}
                 transition={{ duration: 0.3 }}
-                className="flex flex-col items-center gap-0.5"
+                className="inline-flex flex-col"
               >
+                {/* Línea superior */}
                 <div className="h-[1px] w-full bg-white" />
-                <span className="font-poppins text-white font-extralight text-3xl tracking-[0.05em] uppercase">
-                  Inside
-                </span>
+
+                {/* Contenedor del texto con líneas laterales */}
+                <div className="flex items-center">
+                  {/* Línea izquierda */}
+                  <div className="w-[1px] h-auto self-stretch bg-white" />
+
+                  <span className="font-poppins text-white font-extralight text-3xl tracking-[0.05em] uppercase px-1">
+                    Inside
+                  </span>
+
+                  {/* Línea derecha */}
+                  <div className="w-[1px] h-auto self-stretch bg-white" />
+                </div>
+
+                {/* Línea inferior */}
                 <div className="h-[1px] w-full bg-white" />
               </motion.div>
             </motion.div>

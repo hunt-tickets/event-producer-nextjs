@@ -31,12 +31,25 @@ export function Navbar() {
           {/* Logo */}
           <Link
             href="/"
-            className="group relative flex flex-col items-center gap-0.5"
+            className="group inline-flex flex-col"
           >
+            {/* Línea superior */}
             <div className="h-[1px] w-full bg-white transition-all duration-300" />
-            <span className="font-poppins text-white font-extralight text-2xl md:text-3xl tracking-[0.05em] uppercase transition-all duration-300 group-hover:tracking-[0.1em]">
-              Inside
-            </span>
+
+            {/* Contenedor del texto con líneas laterales */}
+            <div className="flex items-center">
+              {/* Línea izquierda */}
+              <div className="w-[1px] h-auto self-stretch bg-white transition-all duration-300" />
+
+              <span className="font-poppins text-white font-extralight text-2xl md:text-3xl tracking-[0.05em] uppercase transition-all duration-300 group-hover:tracking-[0.1em] px-1">
+                Inside
+              </span>
+
+              {/* Línea derecha */}
+              <div className="w-[1px] h-auto self-stretch bg-white transition-all duration-300" />
+            </div>
+
+            {/* Línea inferior */}
             <div className="h-[1px] w-full bg-white transition-all duration-300" />
           </Link>
 
